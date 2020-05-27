@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(225deg, #461b42, #572151);
+    color: #f5f5f5;
+    padding: 2.5% 6%;
+}
+
+.github-link {
+    position: absolute;
+    top: 5.5%;
+    right: 6%;
+    cursor: pointer;
+}
+
+.github-link svg {
+    width: 26px;
+    height: 26px;
+    color: #f5f5f5;
+}
+
+.left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.logo {
+    font-family: "Chelsea Market", cursive;
+    font-size: 2.2em;
+    width: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20%;
+}
+
+.logo svg {
+    width: 26px;
+    height: 26px;
+    margin: 0 8px;
+    transform: translateY(2px);
+}
+
+.heading {
+    margin-bottom: 18px;
+    font-size: 2.8em;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+.subheading {
+    font-size: 1.4em;
+    opacity: 0.7;
+    line-height: 24px;
+    margin-bottom: 12%;
+}
+
+.start-btn {
+    outline: none;
+    background-color: #3bc985;
+    border: none;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f5f5f5;
+    font-size: 1.4em;
+    font-weight: 700;
+    border-radius: 6px;
+    box-shadow: 4px 4px 0 0 #258b5a;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.start-btn svg {
+    margin-left: 8px;
+    width: 30px;
+    height: 30px;
+}
+
+.start-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+.right {
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+}
+
+.hero-image {
+    width: 94%;
+    height: 96%;
+    margin-left: 70px;
+    background-image: url(./images/wfh_1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.alt-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.alt-heading {
+    font-size: 2em;
+    color: #303030;
+    font-weight: 700;
+    margin-top: 5%;
+}
+
+.cards-container {
+    padding: 2% 6% 3% 6%;
+    width: 100%;
+    height: 68vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    width: 24%;
+    color: rgb(100, 100, 100);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    font-size: 1.3em;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.footer {
+    margin-top: 6%;
+    width: 100%;
+    padding: 3% 0;
+    background-color: #ddd;
+    color: #464646;
+    font-weight: 600;
+}
+
+.quiz-container {
+    width: 70%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    padding: 2.5% 8%;
+    border-radius: 12px 0 0 12px;
+    box-shadow: -8px 0 0 0 #ff8c00;
+    background-color: #f5f5f5dc;
+    color: #303030;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.quiz-question {
+    font-size: 2.2em;
+    line-height: 44px;
+}
+
+.options-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 34px;
+    position: relative;
+    margin-top: 3%;
+    margin-bottom: 16%;
+}
+
+.options-container > div {
+    padding: 24px 28px;
+    background-color: #f5f5f580;
+    border-radius: 8px;
+    border: 1px solid #9b9b9b93;
+    box-shadow: 4px 4px 0 0 #9b9b9b93;
+}
+
+.quiz-next-btn{
+    align-self: flex-end;
+}
+
+.timer-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f5f5f580;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+    position: relative;
+    margin-bottom: 20%;
+    transform: translateY(-5%);
+}
+
+.timer-container p {
+    font-size: 5em;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.inner-timer {
+    position: absolute;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
