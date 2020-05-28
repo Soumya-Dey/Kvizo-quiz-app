@@ -13,15 +13,15 @@ const AltInfo = () => {
 
             <div className="cards-container">
                 <div className="card">
-                    <img src="./images/how_2.png"></img>
+                    <img src="./images/how_2.png" alt="feature-1"></img>
                     <p>Play from anywhere in the world & any device.</p>
                 </div>
                 <div className="card">
-                    <img src="./images/usecase_6.png"></img>
+                    <img src="./images/usecase_6.png" alt="feature-2"></img>
                     <p>Show off your knowledge & skills to others.</p>
                 </div>
                 <div className="card">
-                    <img src="./images/how_3.png"></img>
+                    <img src="./images/how_3.png" alt="feature-3"></img>
                     <p>Get instant feedback on how you did in the quiz.</p>
                 </div>
             </div>

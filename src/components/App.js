@@ -8,7 +8,7 @@ import Headings from "./Headings";
 import Timer from "./Timer";
 
 const App = () => {
-    const [isPlaying, setPlaying] = useState(false);
+    const [isPlaying, setPlaying] = useState(true);
 
     return (
         <div>
